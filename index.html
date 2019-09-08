@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Super Mario</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body onload="zoom()">
+        <!-- The images used were downloaded from: http://www.videogamesprites.net/SuperMarioBros1/ -->
+
+        <!-- Header and Sky+Cloud -->
+        <div class="sky">
+            <div class="scorebar">
+                <p>
+                    <span class="topline-mario">MARIO</span>
+                    <span class="topline-world">WORLD</span>
+                    <span class="topline-time">TIME</span>
+                    <span class="bottomline-score">OOOOOO</span>
+                    <span class="bottomline-coin">
+                        <img src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Coin.gif" height="40px"/> x OO
+                    </span>
+                    <span class="bottomline-world">1 - 1</span>
+                    <span class="bottomline-time">111</span>
+                </p>
+            </div>
+
+            <img class="cloud" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/CloudSingle.gif">
+            <img class="cloud" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/CloudDouble.gif">
+            <img class="cloud" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/CloudTriple.gif">
+        </div>
+
+        <!-- Ground -->
+        <div class="ground">
+
+            <!-- Bricks -->
+            <div class="skyblocks">
+                <img class="brick" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Bricks.gif" height="70px;">
+                <img class="brick" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/QuestionBlock.gif" height="70px;">
+                <img class="brick" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Bricks.gif" height="70px;">
+                <img class="brick" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Bricks.gif" height="70px;">
+            </div>
+
+            <!-- Bush -->
+            <img class="bush" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushSingle.gif" height="70px;">
+            <img class="bush" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushDouble.gif" height="70px;">
+            <img class="bush" src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushSingle.gif" height="70px;">
+
+            <!-- Mario Lives here :D -->
+            <div class="mario"></div>
+        </div>
+
+        <!-- JS Scripts -->
+        <script type="text/javascript">
+            // Makes screen zoomOut on page load. Good for better view.
+            function zoom() {
+                document.body.style.zoom = "50%" 
+            }
+        </script>
+    </body>
+</html>

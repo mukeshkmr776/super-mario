@@ -1,0 +1,236 @@
+/*
+ * The images used were downloaded from: http://www.videogamesprites.net/SuperMarioBros1/ **
+ */
+
+html,
+body {
+    font-family: 'Press Start 2P', cursive;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sky,
+.ground {
+    position: relative;
+    /*Because we want to position items on and in them!*/
+}
+
+
+/* Sky */
+.sky {
+    height: 90%;
+    background-color: #548CFF;
+}
+
+
+/* Ground bricks */
+.ground {
+    height: 10%;
+    background-color: #C84C0C;
+    background-image: url('https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/groundblock.png');
+}
+
+
+/* Header */
+.topline-mario {
+    position: absolute;
+}
+
+.topline-world {
+    position: absolute;
+    left: 55%;
+}
+
+.topline-time {
+    position: absolute;
+    left: 85%;
+}
+
+.bottomline-score {
+    position: absolute;
+    top: 90px;
+}
+
+.bottomline-coin {
+    position: absolute;
+    top: 80px;
+    left: 30%;
+}
+
+.bottomline-world {
+    position: absolute;
+    top: 90px;
+    left: 55%;
+}
+
+.bottomline-time {
+    position: absolute;
+    top: 90px;
+    left: 85.5%;
+}
+
+
+/* Header - Scorebar */
+.scorebar {
+    position: absolute;
+    height: 120px;
+    width: 100%;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 180%;
+    color: white;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 0.2;
+}
+
+
+/* Sky + Cloud */
+.cloud {
+    position: absolute;
+    height: 100px;
+}
+
+.cloud:nth-child(2) {
+    top: 120px;
+    -webkit-animation: wind 80s both infinite linear reverse;
+    animation: wind 80s both infinite linear reverse;
+}
+
+.cloud:nth-child(3) {
+    top: 280px;
+    -webkit-animation: wind 50s both infinite linear reverse;
+    animation: wind 50s both infinite linear reverse;
+}
+
+.cloud:nth-child(4) {
+    top: 450px;
+    -webkit-animation: wind 30s both infinite linear reverse;
+    animation: wind 30s both infinite linear reverse;
+}
+
+.skyblocks {
+    position: absolute;
+    top: -250px;
+}
+
+
+/* Bricks */
+.brick {
+    position: fixed;
+    margin: -2px;
+}
+
+.brick:nth-child(1) {
+    left: 600px;
+}
+
+.brick:nth-child(2) {
+    left: 670px;
+}
+
+.brick:nth-child(3) {
+    left: 740px;
+}
+
+.brick:nth-child(4) {
+    left: 810px;
+}
+
+
+/* Bush */
+.bush {
+    position: absolute;
+    top: -70px;
+}
+
+.bush:nth-child(1) {
+    left: 150px;
+}
+
+.bush:nth-child(2) {
+    left: 900px;
+    ;
+}
+
+.bush:nth-child(3) {
+    left: 1500px;
+    ;
+}
+
+
+/* Mario */
+.mario {
+    position: absolute;
+    width: 71px;
+    height: 72px;
+    background: url('https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/mariowalking/result.png') left center;
+    top: -70px;
+    left: 0px;
+
+    -webkit-animation  : play .7s steps(4) infinite, run 7s both infinite linear;
+        -moz-animation : play .7s steps(4) infinite, run 7s both infinite linear;
+          -o-animation : play .7s steps(4) infinite, run 7s both infinite linear;
+             animation : play .4s steps(4) infinite, run 7s both infinite linear;
+}
+
+
+/* Animation for Mario walking */
+@-webkit-keyframes play {
+    100% {
+        background-position: -284px;
+    }
+}
+
+@keyframes play {
+    100% {
+        background-position: -284px;
+    }
+}
+
+/* Animation for Mario moving from left to right */
+@-webkit-keyframes run {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes run {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/* Animation for Clouds moving */
+@-webkit-keyframes wind {
+    from {
+        left: -300px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes wind {
+    from {
+        left: -300px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
